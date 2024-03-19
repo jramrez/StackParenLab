@@ -31,4 +31,39 @@ public class ParenChecker {
                 return false;
         }
     }
+
+    public boolean compare(char p,  char c) {
+        switch(p) {
+            case ')':
+                if (c == '(') {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            case ']':
+                if (c == '[') {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            case '}':
+                if (c == '{') {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            case '>':
+                if (c == '<') {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            default:
+                return false;
+        }
+    }
 }

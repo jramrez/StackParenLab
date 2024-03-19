@@ -17,4 +17,8 @@ public class ParenStack {
         char r = stackList.get(0);
         return r;
     }
+
+    public int size(){
+        return stackList.size();
+    }
 }
